@@ -130,3 +130,10 @@ describe('isVowel', function (){
         expect(isVowel()).toBe(false)
     })
 })
+//  Unit test for add() function
+describe('add', function (){
+    it('should be defined as a function', function(){
+        expect(typeof add()).toBe('function')
+    })
+
+})
