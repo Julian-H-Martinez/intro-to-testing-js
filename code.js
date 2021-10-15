@@ -31,3 +31,5 @@ function sayHello(input) {
 function isFive(num){
     return num == 5;
 }
+//  isEven() function;
+function isEven(){}

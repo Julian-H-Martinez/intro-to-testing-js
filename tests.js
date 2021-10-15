@@ -66,3 +66,9 @@ describe('isFive', function(){
         expect(isFive('5')).toBe(true)
     });
 })
+//  Unit tests for isFive() function
+describe('isEven', function(){
+    it('should be a defined function', function(){
+        expect(typeof isEven).toBe('function')
+    })
+})
