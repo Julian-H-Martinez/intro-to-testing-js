@@ -70,5 +70,26 @@ describe('isFive', function(){
 describe('isEven', function(){
     it('should be a defined function', function(){
         expect(typeof isEven).toBe('function')
+    });
+    it('should return a boolean', function(){
+        expect(typeof isEven()).toBe('boolean')
+    });
+    it('should return true when an even number is passed', function(){
+        expect(isEven(2)).toBe(true);
+        expect(isEven(-4)).toBe(true);
+        expect(isEven("8")).toBe(true);
     })
+    it('should return false when "banana" is passed', function(){
+        expect(isEven('banana')).toBe(false)
+    });
+    it('should return false when Infinity is passed', function(){
+        expect(isEven(Infinity)).toBe(false)
+    });
+    it('should return false when a boolean value is passed', function(){
+        expect(isEven(true)).toBe(false);
+        expect(isEven(false)).toBe(false);
+    });
+    it('should return false when nothing is passed', function(){
+        expect(isEven()).toBe(false)
+    });
 })
