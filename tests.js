@@ -39,9 +39,9 @@ describe('sayHello', function (){
     it('should return the string "Hello, World!" when false', function(){
         expect(sayHello(false)).toBe("Hello, World!");
     })
-//     it('should return the string "Hello, World!" when null', function(){
-//         expect(sayHello(null)).toBe("Hello, World!");
-//     });
+    it('should return the string "Hello, World!" when null', function(){
+        expect(sayHello(null)).toBe("Hello, World!");
+    });
 //     it('should return the string "I\'m an empty string!', function(){
 //         expect(sayHello('')).toBe("I'm an empty string!");
 //     })
