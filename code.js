@@ -51,6 +51,5 @@ function isVowel(input){
     if(input === true || input === false){
         return false;
     }
-
     return typeof input === 'boolean';
 }
