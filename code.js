@@ -50,3 +50,7 @@ function isVowel(input){
     }
     return typeof input === 'boolean';
 }
+//  add() function
+function add(a, b){
+    return parseFloat(a) + parseFloat(b);
+}

@@ -133,7 +133,17 @@ describe('isVowel', function (){
 //  Unit test for add() function
 describe('add', function (){
     it('should be defined as a function', function(){
-        expect(typeof add()).toBe('function')
-    })
+        expect(typeof add).toBe('function')
+    });
+    it('should add the numbers passed', function(){
+        expect(add(2, 3)).toBe(5);
+        expect(add(-3, -9)).toBe(-12);
+        expect(add('-4', '10')).toBe(6);
+    });
+    it('should return NaN when 1 or both params passed has no numeric value', function(){
+        expect(add("banana", "split")).toBeNaN();
+        expect(add(2, 'apples')).toBeNaN();
+        expect(add()).toBeNaN();
+    });
 
 })
