@@ -27,3 +27,7 @@ function sayHello(input) {
         return `Hello, ${input}!`;
     }
 }
+//  isFive() function;
+function isFive(num){
+    return num == 5;
+}
