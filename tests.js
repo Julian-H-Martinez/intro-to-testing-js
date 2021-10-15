@@ -45,9 +45,9 @@ describe('sayHello', function (){
     it('should return the string "Hello, World!', function(){
         expect(sayHello('')).toBe("Hello, World!");
     })
-//     it('should return the string "I\'m a number!', function(){
-//         expect(sayHello(2)).toBe("I'm a number!");
-//     })
+    it('should return the string "Hello, World!', function(){
+        expect(sayHello(2)).toBe("Hello, World!");
+    })
 //     it('should return the number', function(){
 //         expect(sayHello('4')).toBe("I'm a string!");
 //     })
