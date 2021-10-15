@@ -8,8 +8,10 @@ function helloWorld() {
 //  sayHello function
 function sayHello(input) {
     if (typeof input === 'undefined') {
-        return helloWorld();
-    } else {
+        return "Hello, World!";
+    }else if(input === true){
+        return "Hello, World!"
+    }else {
         return `Hello, ${input}!`;
     }
 }
