@@ -15,6 +15,8 @@ function sayHello(input) {
         return "Hello, World!";
     }else if(input === null){
         return "Hello, World!";
+    }else if(input === ""){
+        return "Hello, World!";
     }
     else {
         return `Hello, ${input}!`;
