@@ -33,17 +33,10 @@ function isFive(num){
 }
 //  isEven() function;
 function isEven(num){
-    if(num == 2){
-        return true;
-    }
-    if(num == -4){
-        return true;
-    }
-    if(num == "8"){
-        return true;
-    }
     if(num === true || num === false){
         return false;
+    }else{
+        return num % 2 == 0;
     }
-    return typeof num === 'boolean';
+    // return typeof num === 'boolean';
 }
