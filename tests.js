@@ -93,3 +93,40 @@ describe('isEven', function(){
         expect(isEven()).toBe(false)
     });
 })
+//  Unit test for isVowel
+describe('isVowel', function (){
+    it('should be a defined function', function(){
+        expect(typeof isVowel).toBe('function')
+    });
+    it('it should return a boolean', function(){
+        expect(typeof isVowel()).toBe('boolean')
+    });
+    it('it should return true when vowel is passed', function(){
+        expect(isVowel('a')).toBe(true);
+        expect(isVowel('A')).toBe(true);
+        expect(isVowel('e')).toBe(true);
+        expect(isVowel('E')).toBe(true);
+        expect(isVowel('i')).toBe(true);
+        expect(isVowel('I')).toBe(true);
+        expect(isVowel('o')).toBe(true);
+        expect(isVowel('O')).toBe(true);
+        expect(isVowel('u')).toBe(true);
+        expect(isVowel('U')).toBe(true);
+    });
+    it('it should return false when a consonant is passed', function(){
+        expect(isVowel("y")).toBe(false);
+    });
+    it('it should return false when a number is passed', function(){
+        expect(isVowel(4)).toBe(false);
+    });
+    it('it should return false when a boolean value is passed', function(){
+        expect(isVowel(true)).toBe(false);
+        expect(isVowel(false)).toBe(false);
+    });
+    it('it should return false when "banana" is passed', function(){
+        expect(isVowel('banana')).toBe(false)
+    });
+    it('it should return false when nothing is passed', function(){
+        expect(isVowel()).toBe(false)
+    })
+})

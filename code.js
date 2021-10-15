@@ -40,3 +40,17 @@ function isEven(num){
     }
     // return typeof num === 'boolean';
 }
+//  isVowel() function;
+function isVowel(input){
+    if(input === "a" || input === 'e' || input === 'i' || input === 'o' || input === 'u'){
+        return true;
+    }
+    if(input === 'A'|| input === 'E' || input === 'I' || input === 'O' || input === 'U'){
+        return true;
+    }
+    if(input === true || input === false){
+        return false;
+    }
+
+    return typeof input === 'boolean';
+}
