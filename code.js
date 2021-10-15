@@ -6,6 +6,6 @@ function helloWorld() {
 //     return "Hello, World!";
 // }
 //  sayHello function
-function sayHello(){
-    return ""
+function sayHello(input){
+    return `Hello, ${input}!`;
 }
