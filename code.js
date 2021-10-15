@@ -6,6 +6,10 @@ function helloWorld() {
 //     return "Hello, World!";
 // }
 //  sayHello function
-function sayHello(input){
-    return `Hello, ${input}!`;
+function sayHello(input) {
+    if (typeof input === 'undefined') {
+        return helloWorld();
+    } else {
+        return `Hello, ${input}!`;
+    }
 }
